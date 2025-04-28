@@ -161,11 +161,52 @@ footer ul {
   /*Añadimos flex*/
 }
 
+
+header .menu-burger{
+  display: none;
+}
+header .menu-burger nav{
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+ header .menu-burger ul {
+  
+  display:none;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+input:checked  ~ ul{
+  display:flex;
+}
+
+input {
+  display: none;
+ } 
+  .menu svg{
+  color: white; 
+  width: 25px;
+  height: 25px;
+  
+ }
+
 @media screen and (max-width:  768px) {
+  header nav ul{
+
+    display: none;
+  }
+  /*header .burger img{
+    display: flex;
+  }*/
+  header .menu-burger nav{
+    display: flex;
+  }
+
+  header .menu-burger{
+    display: flex;
+  }
    /* - Ocultar los botone de nav (del header)
       - Añadir el ícono hamburguesa */
-      header nav ul {
-        display: none;
-      }
-      
-    }
+}
