@@ -5,6 +5,22 @@
     --color-texto: #0e0000;
 }
 
+a:link {
+    color: rgb(251, 255, 0);
+  }
+  
+  a:visited {
+    color: rgb(192, 165, 165);
+  }
+  
+  a:hover {
+    color: rgb(76, 91, 224);
+  }
+  
+  a:active {
+    color: rgb(255, 0, 0);
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,9 +47,16 @@ footer {
     position: sticky;
     top: 0;
 }
+header nav ul {
+  padding-top: 10px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-around;
+}
 li {
     list-style-type: none;
     padding-bottom: 10px;
+    padding-right: 30px;
 }
 
 
@@ -47,8 +70,7 @@ p{
 .Form-Registrar {
     color: #ffffff;
     background-color: rgb(0, 0, 0);
-    border-style: double;
-    display: grid;
+    display: flex;
     width: 100%;    
     padding-right: 20px;
 }
@@ -56,63 +78,51 @@ p{
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: center;
+
 }
-.flex-item-icon {
+.flex-item-side {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;    
+    width: 50%;
+    min-width: 200px;
+    min-height: 100px;
     padding-top: 20px;
     margin-top: 5px;
+    flex-grow: 1;
+    padding: 20px;
 }
   
 .flex-item-text {
     padding: 10px;
     flex: 50%;
 }
-
-.flex-item-options {
+.flex-item-Descripcion {
     padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px #ccc;
-    width: 50px;
-    text-align: center;
+    flex: 100%;
+    min-height: 100px;
 }
-.flex-item-options-2 {
-    padding: 10px;
-    width: 100px;
-    text-align: center;    
-}
-
 .card {
-    border-radius: 20px;
     padding: 20px;
     width: 100%;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px #ccc;
     margin: 20px 10px;
-}
-.card>h3{
-    text-align: center;
-}
-.card>h3 {
-    color: var(--color-secundario);
-    font-size: 1.5em;
-    margin: 20px 0;
-    vertical-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/*** Responsive */
-@media (min-width: 769px) {
-        .Form-Registrar {
-        border-radius: 20px;
-        width: 100%;
-        border: 1px solid #ccc;
-        box-shadow: 2px 2px 6px #ccc;
-        margin: 20px 10px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 10px; 
-    }    
-    
+.card-style{
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px #ccc;
 }
+.card-style-2{
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px #ccc;
+}
+button:hover {
+    background-color: #ba0000;
+    color: white;
+  }

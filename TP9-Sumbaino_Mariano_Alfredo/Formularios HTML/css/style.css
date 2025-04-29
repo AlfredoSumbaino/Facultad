@@ -4,7 +4,21 @@
     --color-secundario: #af6b6b;
     --color-texto: #0e0000;
 }
-
+a:link {
+    color: rgb(251, 255, 0);
+  }
+  
+  a:visited {
+    color: rgb(192, 165, 165);
+  }
+  
+  a:hover {
+    color: rgb(76, 91, 224);
+  }
+  
+  a:active {
+    color: rgb(255, 0, 0);
+  }
 * {
     box-sizing: border-box;
     margin: 0;
@@ -31,9 +45,16 @@ footer {
     position: sticky;
     top: 0;
 }
+header nav ul {
+  padding-top: 10px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-around;
+}
 li {
     list-style-type: none;
     padding-bottom: 10px;
+    padding-right: 30px;
 }
 
 

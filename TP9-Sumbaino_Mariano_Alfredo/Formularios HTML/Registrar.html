@@ -10,26 +10,68 @@
     <header class="Header-Buscador">
         <section class="flex-container">
             <div class="flex-item-text"><h1>Hoja de Registro</h1></div>
-            <div class="search-bar ">
-                <input type="text" placeholder="Buscar" class="flex-item-options-2 search-input">
-            </div>
+            <nav>
+                <ul class="">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./Registrar.html">Registrar Nuevo Juego</a></li>
+                    <li><a href="./Login.html">Login</a></li>
+                </ul>
+            </nav>
         </section>       
     </header>
-    <div class="Form-Registrar">
-        <div class="card">
+    <div class="Form-Registrar ">
+        <div class="card card-style">
             <div>            
-                <div class="flex-container">
-                    <div class="flex-item-text"><h3>Registra un Nuevo Juego</h3></div>
+                <div>
+                    <div class="flex-item-text "><h3>Registra un Nuevo Juego</h3></div>
                     
-                    <form action="/registro" method="post">
-                        <input type="text" name="nombre" 
-                        placeholder="Nombre del Juego" 
-                        required class="flex-item-text">
-                        <input type="text" name="nombre" 
-                        placeholder="Breve Descripcion" 
-                        required class="flex-item-text">
+                    <form class="flex-container card-style" action="/registro" method="post">
                         
+                        <div class="flex-item-side card-style-2">                                
+                            <label for="reg-Name">Titulo:</label>
+                            <input id="reg-Name" type="text" name="nombre" 
+                            placeholder="Nombre del Juego" 
+                            required >
+                            <br>Recuerda que el nombre no puede ser mayor a 50 caracteres<br>
+                        </div>
+                        <div class="flex-item-side">
+                            Subir Portada del Videojuego<br>
+                            <input type="file" name="imagen"
+                            accept="image/png, image/jpeg"
+                            class="card-style-2">
+                            <br>Ingresa la fecha de Lanzamiento del Juego<br>
+                            <input type="date" name="fecha-lanzamiento"
+                            min="1950-01-01" max="2050-01-01"
+                            class="card-style-2">
+                        </div>
+                        
+                        <div class="flex-item-side card-style-2">
+                            <p>
+                                Ingresa el Genero del Videojuego<br>
+                                <input type="checkbox" id="genero1" name="Tipo-Juego" value="1"/>
+                                <label for="genero1"> Shooter</label><br>
+                                <input type="checkbox" id="genero2" name="Tipo-Juego" value="2" />
+                                <label for="genero2"> Estrategia</label><br>
+                                <input type="checkbox" id="genero3" name="Tipo-Juego" value="3" />
+                                <label for="genero3"> Multijugador</label><br>
+                                <input type="checkbox" id="genero4" name="Tipo-Juego" value="4" />
+                                <label for="genero4"> Eventura</label>
+                              </p>
+                        </div>
+                        
+                        <div class="flex-item-side card-style-2">
+                            <label for="reg-Name">Descripcion:</label>
+                            <textarea name="Description" id="reg-Description"
+                            class="flex-item-Descripcion"></textarea>
+                            
+                        </div>
                     </form>
+                    <p>
+                            <button type="button" class="card-style-2"
+                            onclick="alert('Usted Agrego el Nuevo Juego')">
+                            <h3>Registrar Nuevo Juego</h3></button>
+                    </p>
+                    
                 </div>   
         </div>
 
