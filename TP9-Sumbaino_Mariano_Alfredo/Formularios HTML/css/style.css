@@ -1,0 +1,316 @@
+
+:root {
+    --color-principal: #940808;
+    --color-secundario: #af6b6b;
+    --color-texto: #0e0000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+header {
+    background-color: var(--color-principal);
+    width: 100%;
+    color: #fff;
+}
+footer {
+    background-color: var(--color-principal);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.Header-Buscador{
+    position: sticky;
+    top: 0;
+}
+li {
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+
+ul {
+    display: flex;
+}
+
+p{
+    padding: 10px;
+}
+.grid-menu {
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    border-style: double;
+    display: grid;
+    width: 100%;    
+    padding-right: 20px;
+}
+
+    .Main-Perfiles {    
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px #ccc;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 20px 10px;
+        gap: 20px;
+        padding: 10px;
+        grid-row: 1/2;
+    }
+.Game-Avatar {
+    box-shadow: 2px 2px 6px #ccc;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    background-position:center center;
+    margin-right: 6px;
+    vertical-align: center;
+    background-size: 80% 80%;
+    
+}
+.Avatar-Size-Small{
+    width: 30px;
+    height: 30px;
+}
+.Avatar-Size-Medium{
+    width: 40px;
+    height: 40px;
+}
+
+.Main-Recomendaciones{
+    display: grid;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px #ccc;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px 10px;
+    grid-row: 3/4;
+    padding: 10px;
+}
+
+    .Main-Presentaciones{
+        display: grid;
+        grid-row: 2/3;
+    }
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+  
+.flex-item-text {
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-options {
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px #ccc;
+    width: 50px;
+    text-align: center;
+}
+.flex-item-options-2 {
+    padding: 10px;
+    width: 100px;
+    text-align: center;    
+}
+
+.card {
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px #ccc;
+    margin: 20px 10px;
+}
+.card>h3{
+    text-align: center;
+}
+.Game-Marco{
+    width: auto;
+    height: 400px;
+    
+}
+.Game-Portada{    
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 10px;
+    background-position: center;
+    flex-grow: 0;
+}
+.Game-Portada .Portada{
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.card>h3 {
+    color: var(--color-secundario);
+    font-size: 1.5em;
+    margin: 20px 0;
+    vertical-align: center;
+}
+
+/*** Responsive */
+@media (min-width: 769px) {
+    .grid-menu {
+        background-color: rgb(0, 0, 0);
+        display: grid;
+        width: 100%;
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 150px 150px auto;
+        padding-right: 5px;
+        gap: 20px;
+    }
+    .Main-Perfiles {    
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px #ccc;
+        margin: 20px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 10px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .Main-Presentaciones{
+        display: grid;
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px #ccc;
+        margin: 20px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 10px;   
+        grid-column: 1/2;
+        grid-row: 2/4;   
+    }
+    .Main-Recomendaciones{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        width: 100%;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px #ccc;
+        margin: 20px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 10px;
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    .flex-container { 
+        height: 60px;   
+        display: flex;
+        align-items: center;  
+    }
+    .flex-item-options-2 {
+        padding: 10px;
+        flex: 10%;
+        text-align: center;    
+    }
+    
+
+    .Game-Avatar {
+        box-shadow: 2px 2px 6px #ccc;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position:center center;
+        margin-right: 10px;
+        vertical-align: center;
+        background-size: 80% 80%;
+        
+    }
+    .Avatar-Size-Small{
+        width: 40px;
+        height: 40px;
+    }
+    .Avatar-Size-Medium{
+        width: 75px;
+        height: 75px;
+    }
+    
+}
+
+
+.usuario-Imagen-Avatar{    
+    background-image:url(../img/usuario-Icon.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Game-Image-1{
+    background-image:url(../img/Bioshock2-Wall.jpg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Game-Image-1-avatar{
+    background-image:url(../img/Bioshock2-icon.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Game-Image-2{
+    background-image:url(../img/MetalSlug-Wall.jpg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Game-Image-2-avatar{
+    background-image:url(../img/MetalSlug-icon.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Game-Image-3{
+    background-image:url(../img/rakion-Wall.jpg);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.Game-Image-3-avatar{
+    background-image:url(../img/rakion-icon.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Game-Image-4-avatar{
+    background-image:url(../img/sven-icon.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.Game-Image-5-avatar{
+    background-image:url(../img/HalfLife-icon.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
