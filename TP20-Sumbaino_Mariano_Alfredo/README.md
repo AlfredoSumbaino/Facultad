@@ -48,12 +48,12 @@ El servidor corre por defecto en [http://localhost:`PORT`](http://localhost:`POR
 
 - **GET**
   ```bash
-  curl http://localhost:3000/frutas/all
+  http://localhost:3000/frutas/all
   ```
 
 - **POST**
   ```bash
-  curl -X POST "http://localhost:3000/frutas?nombre=Manzana&precio=100&imagen=🍎"
+  POST "http://localhost:3000/frutas?nombre=Manzana&precio=100&imagen=🍎"
   ```
   **Cuerpo esperado (si fuera por body JSON):**
   ```json
@@ -66,7 +66,7 @@ El servidor corre por defecto en [http://localhost:`PORT`](http://localhost:`POR
 
 - **PUT**
   ```bash
-  curl -X PUT "http://localhost:3000/frutas/17?precio=600"
+  PUT "http://localhost:3000/frutas/17?precio=600"
   ```
   **Cuerpo esperado (si fuera por body JSON):**
   ```json
@@ -79,7 +79,7 @@ El servidor corre por defecto en [http://localhost:`PORT`](http://localhost:`POR
 
 - **DELETE**
   ```bash
-  curl -X DELETE http://localhost:3000/frutas/17
+ DELETE http://localhost:3000/frutas/17
   ```
 
 ## Ejemplo de respuesta de POST
