@@ -1,0 +1,16 @@
+document.querySelector('body')
+document.querySelector('h1')
+document.querySelector('body > div')
+document.querySelector('body > div > h5')
+document.querySelector('body > div > ul')
+document.querySelectorAll('body > div > ul > li')
+document.querySelectorAll('body > div > ul > li > a')
+document.querySelector('body > section')
+document.querySelectorAll('body > section > article')
+document.querySelector('body > section > article.animado')
+document.querySelector('.animado')
+document.querySelectorAll('body > section > article > h2')
+document.querySelectorAll('body > section > article > p')
+console.log()
+//para probar que los selectores funcionan correctamente
+//-Copiar cualquiera selector de arriba para confirmar su correcto funcionamiento-
