@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario JS</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div id="sesion_iniciada" class="hidden">
+      <h1> Bienvenido al sitio 😀 </h1>
+      <h1 id="usuario_name"> Nombre del Usuario</h1>
+      <div>
+        <button id="logout-btn" class="login-btn">Cerrar Sesión</button>
+      </div>
+    </div>
+    <main>
+      <h1>Iniciar Sesión</h1>
+      <form>
+        <div class="input-container">
+          <label for="email">Email</label>
+          <input
+            name="email"
+            type="email"
+            id="email-input"
+            placeholder="Ingresa tu email"
+          />
+        </div>
+        <div class="input-container">
+          <label for="password">Contraseña</label>
+          <input
+            name="password"
+            type="password"
+            id="password-input"
+            placeholder="Ingresa tu contraseña"
+          />
+        </div>
+        <div id="status-container" class="hidden">
+          <div id="loader" class="hidden">Iniciando Sesión...</div>
+          <div id="error-container" class="hidden">
+            <small>Alguno de los datos ingresados son incorrectos</small>
+          </div>
+        </div>
+        <button id="login-btn" class="login-btn" type="button">Inciar sesión</button>
+      </form>
+    </main>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
