@@ -6,7 +6,7 @@ function App() {
   const [mostrarPedido, setMostrarPedido] = useState(true)
 
   const handleCancel = () => {
-    console.log('El pedido fue cancelado');
+    alert('El pedido fue cancelado')
     setMostrarPedido(false)
   }
 
