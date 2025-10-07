@@ -1,0 +1,235 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0f172a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+nav {  
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-logo:hover {
+  color: #fbbf24;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fbbf24;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+h1:hover{
+  color: rgb(255, 198, 75);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border: 2px solid #475569;
+  border-radius: 1rem;
+  width: 320px;
+  height: auto;
+  margin: 1rem;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.3);
+  border-color: #3b82f6;
+}
+
+.card h3 {
+  color: #f1f5f9;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card > a {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  border: 2px solid #3b82f6;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+}
+
+.card > a:hover {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.card > img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Contact page styles */
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact-info {
+  background: linear-gradient(145deg, #1e293b, #334155);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid #475569;
+}
+
+.contact-details p {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+}
+
+.social-media {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #475569;
+}
+
+button {
+  border-radius: 8px;
+  border: 2px solid #3b82f6;
+  padding: 0.75rem 1.5rem;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #3b82f6;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid #fbbf24;
+  outline-offset: 2px;
+}
+
+/* Recipe detail styles */
+.card ul {
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.card ul li {
+  margin: 0.5rem 0;
+  color: #e2e8f0;
+}
+
+.card p {
+  text-align: left;
+  margin: 1rem 0;
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+/* receta-detail*/
+.receta-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: linear-gradient(145deg, #1e293b, #334155);
+  border-radius: 1rem;
+  border: 2px solid #475569;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex; /* Habilita Flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  flex-direction: column;
+}
